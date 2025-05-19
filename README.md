@@ -1,4 +1,6 @@
-## OctoTools
+## MLZero Project Page
+
+This is the project page of MLZero. Please check the implementation in [Autogluon Assistant](https://github.com/autogluon/autogluon-assistant).
 
 This website is adapted from [OctoTools website](https://octotools.github.io).
 
