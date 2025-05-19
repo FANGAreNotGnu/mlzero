@@ -63,7 +63,6 @@
     </h4>
     <ul class="toc-list">
       <li><a href="#introduction">Introduction</a></li>
-      <li><a href="#video">YouTube Video</a></li>
       <li><a href="#visualization">Visualization</a></li>
       <li>
         <a href="#framework">Framework</a>
@@ -182,17 +181,7 @@
                     </span>
                     <span>Visualize</span>
                   </a>
-                </span>
-                <!-- YouTube Link. -->
-                <span class="link-block">
-                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    class="external-link button is-normal is-rounded is-dark" target="_blank">
-                    <span class="icon">
-                      <p style="font-size:18px">📺</p>
-                    </span>
-                    <span>YouTube</span>
-                  </a>
-                </span>            
+                </span>     
               </div>
             </div>
 
@@ -206,16 +195,12 @@
   <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="content has-text-centered">
-        <img src="assets/images/aga-abstract.pdf" width="100%">
+        <img src="assets/images/aga-abstract.jpg" width="100%">
         <p style="text-align: left;">
           MLZero: An end-to-end multi-agent system that integrates specialized perception agents 
           with dual memory modules (semantic and episodic) to power iterative coding cycles, 
           transforming raw data into ready-to-use models and prediction outputs with zero human intervention.
-        </p>
-      </div>
-      <div class="content has-text-centered">
-        <img src="assets/images/agent.pdf" width="100%">
-        <p style="text-align: left;">
+
           The overall framework of MLZero.
           (1) \textbf{Perception} that interprets arbitrary data inputs and transforms them into structured context; 
           (2) \textbf{Semantic Memory} that enriches the system with knowledge of the ML Library; 
@@ -225,28 +210,6 @@
       </div>
     </div>
   </section>
-
-
-<!-- YouTube Video -->
-<section class="section video-section" id="video">
-  <div class="container">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3 video-title">YouTube Video</h2>
-        <div class="publication-video video-container">
-          <iframe src="https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen>
-          </iframe>
-        </div>
-        <p class="has-text-centered mt-4">
-          Demo WIP.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
 
   <!-- Introduction -->
   <section class="section" id="introduction">
@@ -276,10 +239,7 @@
     </div>
     <div class="container is-max-desktop">
     <div class="content has-text-centered">
-    <img src="assets/images/mlebench_vis.pdf" width="40%">
-    <p style="text-align: left;">
-    Performance comparison across diverse machine learning tasks. <b>MLZero</b> achieves substantial improvements over existing AutoML frameworks when evaluated on both MLE-Bench Lite and our new Multimodal AutoML Agent Benchmark.
-    </p>
+    <img src="assets/images/mlzero_table_1.png" width="80%">
     </div>
     </div>
     </div>
@@ -296,6 +256,11 @@
           <h2 class="title is-3">The <span style="color: var(--color-ml-red);"><b>ML</b></span><span
               style="color: var(--color-zero-blue);"><b>Zero</b></span> Framework</h2>
           <div class="content has-text-justified">
+            <div class="container is-max-desktop">
+              <div class="content has-text-centered">
+                <img src="assets/images/agent.jpg" alt="MLZero Architecture" width="80%">
+              </div>
+            </div>
             <p>
               We present <span style="color: var(--color-ml-red);"><b>ML</b></span><span
                 style="color: var(--color-zero-blue);"><b>Zero</b></span>, a multi-agent system that automates 
@@ -336,11 +301,6 @@
               objectives, constraints, and evaluation criteria; and the <b>ML Library selection agent</b> employs context-aware 
               reasoning to match problem characteristics with the appropriate ML Library $M$.
             </p>
-            <div class="container is-max-desktop">
-              <div class="content has-text-centered">
-                <img src="/api/placeholder/800/400" alt="MLZero Architecture" width="80%">
-              </div>
-            </div>
           </div>
           
           <h3 class="title is-4">Semantic Memory Module</h3>
@@ -408,7 +368,7 @@
             <div id="results-carousel" class="carousel results-carousel">
               <div class="box m-5">
                 <div class="content has-text-centered">
-                  <img src="/api/placeholder/800/500" alt="MLEbench Results" width="90%">
+                  <img src="assets/images/mlebench_vis.jpg" alt="MLEbench Results" width="90%">
                   <p>Performance comparison on MLEbench-Lite. <span style="color: var(--color-ml-blue);"><b>ML</b></span><span style="color: var(--color-zero-green);"><b>Zero</b></span> demonstrates superior performance with an average rank of 1.43, significantly outperforming competing approaches including AIDE (2.36), ResearchAgent (MLAB) (3.29), and CodeActAgent (OpenHands) (2.93). <span style="color: var(--color-ml-blue);"><b>ML</b></span><span style="color: var(--color-zero-green);"><b>Zero</b></span> achieves the highest success rate of 86% on MLEbench-Lite, compared to AIDE (81%), MLAB (62%), and OpenHands (71%), while also outperforming competitors in medal counts with six gold and two silver medals.
                   </p>
                 </div>
@@ -416,7 +376,7 @@
   
               <div class="box m-5">
                 <div class="content has-text-centered">
-                  <img src="/api/placeholder/800/500" alt="Main Results Table" width="90%">
+                  <img src="assets/images/mlzero_table_1.png" alt="Main Results Table" width="90%">
                   <p>Performance comparison between <span style="color: var(--color-ml-blue);"><b>ML</b></span><span style="color: var(--color-zero-green);"><b>Zero</b></span> and several state-of-the-art machine learning and coding agents on our Multimodal AutoML Agent Benchmark. <span style="color: var(--color-ml-blue);"><b>ML</b></span><span style="color: var(--color-zero-green);"><b>Zero</b></span> with <b>def</b>ault configuration achieves a markedly higher success rate (92.0%) compared to all competing agents and delivers solutions of superior quality, as evidenced by its substantially lower average rank (2.42). The <b>8B</b> configuration, which uses LLama 3.1 8B, maintains better performance (45.3% success rate, 5.14 rank average) than other agents despite a significantly reduced model size. In the 24-hour extended run-time experiment (<b>24hrs</b>), <span style="color: var(--color-ml-blue);"><b>ML</b></span><span style="color: var(--color-zero-green);"><b>Zero</b></span> approaches expert-level performance given sufficient computational resources.
                   </p>
                 </div>
